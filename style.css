@@ -1,41 +1,69 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
-  background-color: #f5f5f5;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
-header {
-  background-color: #222;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   color: #fff;
-  padding: 30px 20px;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding: 40px;
 }
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
+.hero .highlight {
+  color: #00e0ff;
 }
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-  background-color: #fff;
-  margin-top: 20px;
-  border-radius: 10px;
+.hero p {
+  margin: 20px 0;
+  font-size: 1.1rem;
+  max-width: 700px;
 }
-.project-card {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
+.buttons {
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
   border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
+.btn-primary {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
 }
-a {
-  color: #0077cc;
+.btn-secondary {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  color: white;
+}
+.btn-download {
+  background: #00e0ff;
+  color: #000;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  padding: 15px 0;
+}
+.navbar a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.navbar a:hover {
+  color: #00e0ff;
 }
